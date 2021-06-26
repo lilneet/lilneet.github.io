@@ -18,7 +18,7 @@ sitemap: false
         {% assign t = tag | first %}
         {% assign posts = tag | last %}
         <li class="tag-index" id="{{ t }}-item">
-            <a href="#{{ t }}" onclick="filter('{{ t }}'); return false;">
+            <a href="{{ page.url }}#{{ t }}" onclick="filter('{{ t }}')">
                 <span>{{ t }}</span>
                 <span class="count">{{ site.tags[t].size }}</span>
             </a>
