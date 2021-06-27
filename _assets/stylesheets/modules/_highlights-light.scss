@@ -20,7 +20,7 @@
 .highlighter-rouge {
   padding: 2px 4px;
   font-size: 14px;
-  color: #d14;
+  color: $code-red-light;
   background: lighten($gray-lightest, 6);
   border: 1px solid $base-border-color;
   border-radius: 1px;
@@ -43,14 +43,14 @@
 
 .highlight .c {
   font-style: italic;
-  color: #998;
+  color: $code-brown;
 }
 
 // Error
 
 .highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2;
+  color: $code-red;
+  background-color: $code-red-lightest;
 }
 
 // Keyword
@@ -69,21 +69,21 @@
 
 .highlight .cm {
   font-style: italic;
-  color: #998;
+  color: $code-brown;
 }
 
 // Comment.Single
 
 .highlight .cp {
   font-weight: bold;
-  color: #999;
+  color: $code-brown;
 }
 
 // Comment.Single
 
 .highlight .c1 {
   font-style: italic;
-  color: #998;
+  color: $code-brown;
 }
 
 // Comment.Special
@@ -91,21 +91,21 @@
 .highlight .cs {
   font-style: italic;
   font-weight: bold;
-  color: #999;
+  color: $code-brown;
 }
 
 // Generic.Deleted
 
 .highlight .gd {
-  color: #000;
-  background-color: #fdd;
+  color: $code-black;
+  background-color: $code-white;
 }
 
 // Generic.Deleted.Specific
 
 .highlight .gd .x {
-  color: #000;
-  background-color: #faa;
+  color: $code-black;
+  background-color: $code-pink-light;
 }
 
 // Generic.Emph
@@ -117,39 +117,39 @@
 // Generic.Error
 
 .highlight .gr {
-  color: #a00;
+  color: $code-red-dark;
 }
 
 // Generic.Heading
 
 .highlight .gh {
-  color: #999;
+  color: $code-brown;
 }
 
 // Generic.Inserted
 
 .highlight .gi {
-  color: #000;
-  background-color: #dfd;
+  color: $code-black;
+  background-color: $code-green-lightest;
 }
 
 // Generic.Inserted.Specific
 
 .highlight .gi .x {
-  color: #000;
-  background-color: #afa;
+  color: $code-black;
+  background-color: $code-green-lighter;
 }
 
 // Generic.Output
 
 .highlight .go {
-  color: #888;
+  color: $code-brown-dark;
 }
 
 // Generic.Prompt
 
 .highlight .gp {
-  color: #555;
+  color: $code-brown-darker;
 }
 
 // Generic.Strong
@@ -161,13 +161,13 @@
 // Generic.Subheading
 
 .highlight .gu {
-  color: #aaa;
+  color: $code-brown-lighter;
 }
 
 // Generic.Traceback
 
 .highlight .gt {
-  color: #a00;
+  color: $code-red-dark;
 }
 
 // Keyword.Constant
@@ -198,82 +198,82 @@
 
 .highlight .kt {
   font-weight: bold;
-  color: #458;
+  color: $code-blue-darker;
 }
 
 // Literal.Number
 
 .highlight .m {
-  color: #099;
+  color: $code-blue;
 }
 
 // Literal.String
 
 .highlight .s {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Name.Attribute
 
 .highlight .na {
-  color: #008080;
+  color: $code-blue-dark;
 }
 
 // Name.Builtin
 
 .highlight .nb {
-  color: #0086b3;
+  color: $code-blue-light;
 }
 
 // Name.Class
 
 .highlight .nc {
   font-weight: bold;
-  color: #458;
+  color: $code-blue-darker;
 }
 
 // Name.Constant
 
 .highlight .no {
-  color: #008080;
+  color: $code-blue-dark;
 }
 
 // Name.Entity
 
 .highlight .ni {
-  color: #800080;
+  color: $code-pink-dark;
 }
 
 // Name.Exception
 
 .highlight .ne {
   font-weight: bold;
-  color: #900;
+  color: $code-red-light-darker;
 }
 
 // Name.Function
 
 .highlight .nf {
   font-weight: bold;
-  color: #900;
+  color: $code-red-light-darker;
 }
 
 // Name.Namespace
 
 .highlight .nn {
-  color: #555;
+  color: $code-brown-dark;
 }
 
 // Name.Tag
 
 .highlight .nt {
-  color: #000080;
+  color: $code-blue-darkest;
 }
 
 // Name.Variable
 
 .highlight .nv {
-  color: #008080;
+  color: $code-blue-dark;
 }
 
 // Operator.Word
@@ -285,125 +285,125 @@
 // Text.Whitespace
 
 .highlight .w {
-  color: #bbb;
+  color: $code-brown-light;
 }
 
 // Literal.Number.Float
 
 .highlight .mf {
-  color: #099;
+  color: $code-blue;
 }
 
 // Literal.Number.Hex
 
 .highlight .mh {
-  color: #099;
+  color: $code-blue;
 }
 
 // Literal.Number.Integer
 
 .highlight .mi {
-  color: #099;
+  color: $code-blue;
 }
 
 // Literal.Number.Oct
 
 .highlight .mo {
-  color: #099;
+  color: $code-blue;
 }
 
 // Literal.String.Backtick
 
 .highlight .sb {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Literal.String.Char
 
 .highlight .sc {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Literal.String.Doc
 
 .highlight .sd {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Literal.String.Double
 
 .highlight .s2 {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Literal.String.Escape
 
 .highlight .se {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Literal.String.Heredoc
 
 .highlight .sh {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Literal.String.Interpol
 
 .highlight .si {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Literal.String.Other
 
 .highlight .sx {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Literal.String.Regex
 
 .highlight .sr {
-  color: #009926;
+  color: $code-green;
 }
 
 // Literal.String.Single
 
 .highlight .s1 {
-  color: #d14;
+  color: $code-red-light;
 }
 
 // Literal.String.Symbol
 
 .highlight .ss {
-  color: #990073;
+  color: $code-pink;
 }
 
 // Name.Builtin.Pseudo
 
 .highlight .bp {
-  color: #999;
+  color: $code-brown;
 }
 
 // Name.Variable.Class
 
 .highlight .vc {
-  color: #008080;
+  color: $code-blue-dark;
 }
 
 // Name.Variable.Global
 
 .highlight .vg {
-  color: #008080;
+  color: $code-blue-dark;
 }
 
 // Name.Variable.Instance
 
 .highlight .vi {
-  color: #008080;
+  color: $code-blue-dark;
 }
 
 // Literal.Number.Integer.Long
 
 .highlight .il {
-  color: #099;
+  color: $code-blue;
 }

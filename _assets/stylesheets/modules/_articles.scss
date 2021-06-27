@@ -88,6 +88,20 @@
     font-size: $base-font-size * 1.4;
     font-weight: $base-font-weight-light;
     font-family: $serif;
+
+    svg {
+        transition: fill $base-transition-speed linear;
+        fill: $article-header-title-color;;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        opacity: 0;
+        transition: opacity $base-transition-speed linear;
+    }
+
+    &:hover svg {
+      opacity: 1;
+    }
 }
 
 .article-list-footer {
