@@ -29,9 +29,36 @@ url: # add your site url (format: https://example.com)
 
 ### Optional settings
 
-{% highlight yml %}
+{% highlight java %}
+class Test:
+    public int Test(int j) {
+        int i = 0;
+        while (1) {
+            i ++;
+        }
+        return i;
+    }
+    public getTest() {}
+{% endhighlight %}
+
+* `about_enabled`: If you wish to put the about page link in the top navigation in between the social icons set to true.
+* `discus_identifier`: If you like to use Disqus for comments on each blog post, you can add the Disqus identifier here and it will popup automatically.
+* `ga_analytics`: Add Google Analytics Tracking ID here, it uses the Google Tag Manager snippet.
+* `local_fonts`: By default Chalk uses Google Fonts but if you wish to use local fonts this is the fallback.
+* `rss_enabled`: When set to `true`, the rss icon in the top navigation will show up and people will be able to subscribe to your rss feed.
+* `scrollappear_enabled`: If set to `true`, some elements appear with fade-in effect when visible for the first time, i.e., when scrolling down.
+* `social`: Add you social links in here. When filled in they will show up in the navigation.
+
+
+
+
+
+
+### Optional settings
+
 # Optional settings
 
+```yml
 about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
 baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
 discus_identifier: # Add your Disqus identifier
@@ -63,7 +90,7 @@ social:
   spotify: # Add your Spotify handle
   stackoverflow: # Add your Stack Overflow ID number
   steam: # Add your Steam handle
-{% endhighlight %}
+```
 
 * `about_enabled`: If you wish to put the about page link in the top navigation in between the social icons set to true.
 * `discus_identifier`: If you like to use Disqus for comments on each blog post, you can add the Disqus identifier here and it will popup automatically.
@@ -72,6 +99,11 @@ social:
 * `rss_enabled`: When set to `true`, the rss icon in the top navigation will show up and people will be able to subscribe to your rss feed.
 * `scrollappear_enabled`: If set to `true`, some elements appear with fade-in effect when visible for the first time, i.e., when scrolling down.
 * `social`: Add you social links in here. When filled in they will show up in the navigation.
+
+
+
+
+
 
 ### Other settings
 
