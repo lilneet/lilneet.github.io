@@ -1,85 +1,839 @@
----
-layout: default
-title: "Archive"
-description: ""
-permalink: /archive
-sitemap: false
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Maison Néet | Archive</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="archive-page">
-    {% capture site_tags %}
-    {% for tag in site.tags %}
-    {{ tag | first }}{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-    {% endcapture %}
-    <ul class="archive-tags">
-        {% assign sorted_tags = site.tags | sort %}
-        {% for tag in sorted_tags %}
-        {% assign t = tag | first %}
-        {% assign posts = tag | last %}
-        <li class="tag-index" id="{{ t }}-item">
-            <a href="{{ page.url }}#{{ t }}" onclick="filter('{{ t }}')">
-                <span>{{ t }}</span>
-                <span class="count">{{ site.tags[t].size }}</span>
+  <meta property="og:title" content="Archive">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maison1337.github.io//archive">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="Maison Néet">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://maison1337.github.io//archive">
+  <meta name="twitter:title" content="Archive">
+  <meta name="twitter:description" content="">
+
+  
+    <meta property="og:image" content="https://maison1337.github.io//assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+    <meta name="twitter:image" content="https://maison1337.github.io//assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+  
+
+  <link href="https://maison1337.github.io//feed.xml" type="application/rss+xml" rel="alternate" title="Maison Néet Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-light-a98c41efc5ed9fcc06ac664c9e2f7a9b3c3b2e0a52357d221fe382f6f4abc8fc.ico">
+      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-87d1f2a3a19b1500e5c1626a0492025ca5f7f97d24540dc5900288e92112925a.png">
+      <link rel="stylesheet" type="text/css" href="/assets/light-85399309025e17a34198e9b241145e37ef63d49cb4323ec0fb8398ea0e03908b.css">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav ">
+    <a href="/" class="header-logo" title="Maison Néet">Maison Néet</a>
+    <ul class="header-links">
+        <li>
+            <a href="/about" title="ABOUT">
+                ABOUT
             </a>
         </li>
-        {% endfor %}
+        <li>
+            <a href="/archive" title="ARCHIVE">
+                ARCHIVE
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <div class="archive-page">
+    
+    <ul class="archive-tags">
+        
+        
+        
+        
+        <li class="tag-index" id="a-item">
+            <a href="/archive#a" onclick="filter('a')">
+                <span>a</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="adasdsa-item">
+            <a href="/archive#adasdsa" onclick="filter('adasdsa')">
+                <span>adasdsa</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="b-item">
+            <a href="/archive#b" onclick="filter('b')">
+                <span>b</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="c-item">
+            <a href="/archive#c" onclick="filter('c')">
+                <span>c</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="d-item">
+            <a href="/archive#d" onclick="filter('d')">
+                <span>d</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="design-item">
+            <a href="/archive#design" onclick="filter('design')">
+                <span>design</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="e-item">
+            <a href="/archive#e" onclick="filter('e')">
+                <span>e</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="f-item">
+            <a href="/archive#f" onclick="filter('f')">
+                <span>f</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="h-item">
+            <a href="/archive#h" onclick="filter('h')">
+                <span>h</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="i-item">
+            <a href="/archive#i" onclick="filter('i')">
+                <span>i</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="j-item">
+            <a href="/archive#j" onclick="filter('j')">
+                <span>j</span>
+                <span class="count">2</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="jekyll-item">
+            <a href="/archive#jekyll" onclick="filter('jekyll')">
+                <span>jekyll</span>
+                <span class="count">3</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="k-item">
+            <a href="/archive#k" onclick="filter('k')">
+                <span>k</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="l-item">
+            <a href="/archive#l" onclick="filter('l')">
+                <span>l</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="m-item">
+            <a href="/archive#m" onclick="filter('m')">
+                <span>m</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="o-item">
+            <a href="/archive#o" onclick="filter('o')">
+                <span>o</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="p-item">
+            <a href="/archive#p" onclick="filter('p')">
+                <span>p</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="qqwewqe-item">
+            <a href="/archive#qqwewqe" onclick="filter('qqwewqe')">
+                <span>qqwewqe</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="r-item">
+            <a href="/archive#r" onclick="filter('r')">
+                <span>r</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="s-item">
+            <a href="/archive#s" onclick="filter('s')">
+                <span>s</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="t-item">
+            <a href="/archive#t" onclick="filter('t')">
+                <span>t</span>
+                <span class="count">2</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="vdaijfas-item">
+            <a href="/archive#vdaijfas" onclick="filter('vdaijfas')">
+                <span>vdaijfas</span>
+                <span class="count">1</span>
+            </a>
+        </li>
+        
+        
+        
+        <li class="tag-index" id="web-item">
+            <a href="/archive#web" onclick="filter('web')">
+                <span>web</span>
+                <span class="count">2</span>
+            </a>
+        </li>
+        
     </ul>
 
     <div class="archive">
-        {% for tag in site.tags %}
-        {% assign t = tag | first %}
-        {% assign posts = tag | last %}
-        <div class="archive-list hidden" id="{{ t }}-container">
-            {% for post in posts %}
+        
+        
+        
+        <div class="archive-list hidden" id="design-container">
+            
             <div class="archive-list-post">
-                {% if post.tags contains t %}
-                <a href="{{ post.url }}">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
                     <span class="archive-list-post-title">
-                        {{ post.title }}
+                        Chalk sample post with all elements
                     </span>
                     <span class="archive-list-post-date">
-                        <time>| {{ post.date | date_to_string }}</time>
+                        <time>| 21 Dec 2017</time>
                     </span>
                 </a>
-                {% endif %}
+                
             </div>
-            {% endfor %}
+            
         </div>
-        {% endfor %}
+        
+        
+        
+        <div class="archive-list hidden" id="jekyll-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/introducing-chalk">
+                    <span class="archive-list-post-title">
+                        Introducing chalk
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 23 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/configuring-chalk-copy">
+                    <span class="archive-list-post-title">
+                        How to configure Chalk
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 22 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="a-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="b-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="c-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="d-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="e-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="f-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="j-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="h-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="i-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="k-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="l-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="m-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="o-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="p-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="t-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="r-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="s-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="adasdsa-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="qqwewqe-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="vdaijfas-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                    <span class="archive-list-post-title">
+                        Chalk sample post with all elements
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 21 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="archive-list hidden" id="web-container">
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/introducing-chalk">
+                    <span class="archive-list-post-title">
+                        Introducing chalk
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 23 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+            <div class="archive-list-post">
+                
+                <a href="/posts/configuring-chalk-copy">
+                    <span class="archive-list-post-title">
+                        How to configure Chalk
+                    </span>
+                    <span class="archive-list-post-date">
+                        <time>| 22 Dec 2017</time>
+                    </span>
+                </a>
+                
+            </div>
+            
+        </div>
+        
     </div>
 
     <div class="archive">
         <div class="archive-list">
-            {% if site.posts.size == 0 %}
-            <h2>No post found</h2>
-            {% else %}
-            {% for post in site.posts %}
+            
+            
             <div class="archive-list-post">
-                {% if post.link %}
-                {% if post.customlink %}
-                <a href="{{ post.customlink }}" class="hidden">
-                    {% else %}
-                    <a href="{{ post.link }}">
-                        {% endif %}
-                        {% else %}
-                        {% if post.customlink %}
-                        <a href="{{ post.customlink }}" class="hidden">
-                            {% else %}
-                            <a href="{{ post.url | prepend: site.baseurl }}">
-                                {% endif %}
-                                {% endif %}
+                
+                        
+                            <a href="/posts/introducing-chalk">
+                                
+                                
                                 <span class="archive-list-post-title">
-                                    {{ post.title }}
+                                    Introducing chalk
                                 </span>
                                 <span class="archive-list-post-date">
-                                    <time>| {{ post.date | date_to_string }}</time>
+                                    <time>| 23 Dec 2017</time>
                                 </span>
                             </a>
 
             </div>
-            {% endfor %}
-            {% endif %}
+            
+            <div class="archive-list-post">
+                
+                        
+                            <a href="/posts/configuring-chalk-copy">
+                                
+                                
+                                <span class="archive-list-post-title">
+                                    How to configure Chalk
+                                </span>
+                                <span class="archive-list-post-date">
+                                    <time>| 22 Dec 2017</time>
+                                </span>
+                            </a>
+
+            </div>
+            
+            <div class="archive-list-post">
+                
+                        
+                            <a href="/posts/chalk-sample-post-with-all-elements-copy-copy">
+                                
+                                
+                                <span class="archive-list-post-title">
+                                    Chalk sample post with all elements
+                                </span>
+                                <span class="archive-list-post-date">
+                                    <time>| 21 Dec 2017</time>
+                                </span>
+                            </a>
+
+            </div>
+            
+            
         </div>
     </div>
 </div>
@@ -124,3 +878,83 @@ sitemap: false
         }
     }
 </script>
+        <footer class="footer ">
+  <p>
+    <span class="footer-left"> <span class="copyleft">&copy;</span> 2021 Maison Néet</span>
+
+    <span class="footer-right">
+        <a href="https://github.com/lilneet" rel="noreferrer noopener" target="_blank" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+        <a href="https://twitter.com/n33tyaki" rel="noreferrer noopener" target="_blank" title="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-twitter">
+  <use href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter" xlink:href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter"></use>
+</svg>
+
+        </a>
+        <a href="https://www.linkedin.com/in/amber-wanhui-han" rel="noreferrer noopener" target="_blank" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-linkedin">
+  <use href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin" xlink:href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin"></use>
+</svg>
+
+        </a>
+    </span>
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/zooming@2.1.1/build/zooming.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  // ScrollAppear
+  if (typeof $.fn.scrollAppear === 'function') {
+    $('.scrollappear').scrollAppear();
+  };
+
+  // Zooming
+  new Zooming(
+    {customSize: '100%', scaleBase: 0.9, scaleExtra: 0}
+  ).listen('.zooming');
+
+  // Share buttons
+  $('.article-share a').on('click', function() {
+    window.open($(this).attr('href'), 'Share', 'width=200,height=200,noopener');
+    return false;
+  });
+});
+
+;(function ($) {
+
+var els = [];
+
+var refreshVisibility = function() {
+  $.each(els, function() {
+    if ($(this)[0].getBoundingClientRect().top < $(window).height()) {
+      $(this).addClass('appeared');
+    }
+  });
+};
+
+$.fn.scrollAppear = function() {
+  this.each(function() {
+    els.push($(this));
+    $(this).addClass('appear');
+  });
+
+  refreshVisibility();
+
+  $(window).scroll(function() {
+    refreshVisibility();
+  });
+  return this;
+};
+}(jQuery));
+</script>
+</body>
+</html>
