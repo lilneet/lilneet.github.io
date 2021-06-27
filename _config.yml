@@ -8,7 +8,7 @@ url: https://maison1337.github.io/
 # Optional settings
 
 about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
-disqus_identifier: lilneet 
+disqus_identifier: https-lilneet-github-io
 ga_analytics: # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
