@@ -1,0 +1,48 @@
+<script src="https://cdn.jsdelivr.net/npm/zooming@2.1.1/build/zooming.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  // ScrollAppear
+  if (typeof $.fn.scrollAppear === 'function') {
+    $('.scrollappear').scrollAppear();
+  };
+
+  // Zooming
+  new Zooming(
+    {customSize: '100%', scaleBase: 0.9, scaleExtra: 0}
+  ).listen('.zooming');
+
+  // Share buttons
+  $('.article-share a').on('click', function() {
+    window.open($(this).attr('href'), 'Share', 'width=200,height=200,noopener');
+    return false;
+  });
+});
+
+;(function ($) {
+
+var els = [];
+
+var refreshVisibility = function() {
+  $.each(els, function() {
+    if ($(this)[0].getBoundingClientRect().top < $(window).height()) {
+      $(this).addClass('appeared');
+    }
+  });
+};
+
+$.fn.scrollAppear = function() {
+  this.each(function() {
+    els.push($(this));
+    $(this).addClass('appear');
+  });
+
+  refreshVisibility();
+
+  $(window).scroll(function() {
+    refreshVisibility();
+  });
+  return this;
+};
+}(jQuery));
+</script>

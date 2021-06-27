@@ -1,152 +1,17 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Maison Néet | Page not found</title>
-  <meta name="description" content="Page not found">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+title: "Page not found"
+description: "Page not found"
+permalink: /404.html
+sitemap: false
+layout: default
+---
 
-  <meta property="og:title" content="Page not found">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://maison1337.github.io//404.html">
-  <meta property="og:description" content="Page not found">
-  <meta property="og:site_name" content="Maison Néet">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://maison1337.github.io//404.html">
-  <meta name="twitter:title" content="Page not found">
-  <meta name="twitter:description" content="Page not found">
-
-  
-    <meta property="og:image" content="https://maison1337.github.io//assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
-    <meta name="twitter:image" content="https://maison1337.github.io//assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
-  
-
-  <link href="https://maison1337.github.io//feed.xml" type="application/rss+xml" rel="alternate" title="Maison Néet Last 10 blog posts" />
-
-  
-
-  
-
-    
-      <link rel="icon" type="image/x-icon" href="/assets/favicon-light-a98c41efc5ed9fcc06ac664c9e2f7a9b3c3b2e0a52357d221fe382f6f4abc8fc.ico">
-      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-87d1f2a3a19b1500e5c1626a0492025ca5f7f97d24540dc5900288e92112925a.png">
-      <link rel="stylesheet" type="text/css" href="/assets/light-85399309025e17a34198e9b241145e37ef63d49cb4323ec0fb8398ea0e03908b.css">
-    
-
-  
-
-</head>
-
-<body>
-  <main>
-    <div class="grid grid-centered">
-      <div class="grid-cell">
-        <nav class="header-nav ">
-    <a href="/" class="header-logo" title="Maison Néet">Maison Néet</a>
-    <ul class="header-links">
-        <li>
-            <a href="/about" title="ABOUT">
-                ABOUT
-            </a>
-        </li>
-        <li>
-            <a href="/archive" title="ARCHIVE">
-                ARCHIVE
-            </a>
-        </li>
-        
-    </ul>
-</nav>
-
-
-        <div class="notfound-wrapper">
+<div class="notfound-wrapper">
   <div class="notfound-content">
     <p>
       Looks like you got lost.
       <br>
-      Let's get you back to the <a href="/">homepage</a>!
+      Let's get you back to the <a href="{{ '/' | relative_url }}">homepage</a>!
     </p>
   </div>
 </div>
-        <footer class="footer ">
-  <p>
-    <span class="footer-left"> <span class="copyleft">&copy;</span> 2021 Maison Néet</span>
-
-    <span class="footer-right">
-        <a href="https://github.com/lilneet" rel="noreferrer noopener" target="_blank" title="GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
-  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
-</svg>
-
-        </a>
-        <a href="https://twitter.com/n33tyaki" rel="noreferrer noopener" target="_blank" title="Twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon-twitter">
-  <use href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter" xlink:href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter"></use>
-</svg>
-
-        </a>
-        <a href="https://www.linkedin.com/in/amber-wanhui-han" rel="noreferrer noopener" target="_blank" title="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon-linkedin">
-  <use href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin" xlink:href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin"></use>
-</svg>
-
-        </a>
-    </span>
-  </p>
-</footer>
-
-      </div>
-    </div>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/zooming@2.1.1/build/zooming.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-  // ScrollAppear
-  if (typeof $.fn.scrollAppear === 'function') {
-    $('.scrollappear').scrollAppear();
-  };
-
-  // Zooming
-  new Zooming(
-    {customSize: '100%', scaleBase: 0.9, scaleExtra: 0}
-  ).listen('.zooming');
-
-  // Share buttons
-  $('.article-share a').on('click', function() {
-    window.open($(this).attr('href'), 'Share', 'width=200,height=200,noopener');
-    return false;
-  });
-});
-
-;(function ($) {
-
-var els = [];
-
-var refreshVisibility = function() {
-  $.each(els, function() {
-    if ($(this)[0].getBoundingClientRect().top < $(window).height()) {
-      $(this).addClass('appeared');
-    }
-  });
-};
-
-$.fn.scrollAppear = function() {
-  this.each(function() {
-    els.push($(this));
-    $(this).addClass('appear');
-  });
-
-  refreshVisibility();
-
-  $(window).scroll(function() {
-    refreshVisibility();
-  });
-  return this;
-};
-}(jQuery));
-</script>
-</body>
-</html>
