@@ -1,20 +1,18 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Maison Néet</title>
+    <description></description>
+    <link>https://maison1337.github.io/</link>
+    <atom:link href="https://maison1337.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Blogpost Unit 01</title>
+        <description>Project Maison Néet 製作決定!</description>
+        <pubDate>Sun, 27 Jun 2021 00:00:00 -0700</pubDate>
+        <link>https://maison1337.github.io//posts/blogpost-unit-01</link>
+        <guid isPermaLink="true">https://maison1337.github.io//posts/blogpost-unit-01</guid>
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>

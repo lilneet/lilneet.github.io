@@ -1,9 +1,143 @@
----
-layout: default
-title: ""
-description: ""
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Maison Néet | </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="about {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-    N33t, the owner of this cyber-wasteland, is a software engineer interested in <a href="{{ 'archive' | relative_url }}" title="">a lot of things</a>, but mainly do stuff with Java 8, due to free market economy demand. 
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maison1337.github.io//about">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="Maison Néet">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://maison1337.github.io//about">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+
+  
+
+  <link href="https://maison1337.github.io//feed.xml" type="application/rss+xml" rel="alternate" title="Maison Néet Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-481eca231f26cb743be227db39a134d65ab69d7f7a8343b361ee85040ade4550.ico">
+      <link rel="stylesheet" type="text/css" href="/assets/light-f5cc82229d6b1163234f08816a15e734923678c14afe90662752ce216bec4a75.css">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav ">
+    <a href="/" class="header-logo" title="Maison Néet">Maison Néet</a>
+    <ul class="header-links">
+        <li>
+            <a href="/about" title="ABOUT">
+                ABOUT
+            </a>
+        </li>
+        <li>
+            <a href="/archive" title="ARCHIVE">
+                ARCHIVE
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+        <div class="about ">
+    N33t, the owner of this cyber-wasteland, is a software engineer interested in <a href="/archive" title="">a lot of things</a>, but mainly do stuff with Java 8, due to free market economy demand. 
 </div>
+
+        <footer class="footer ">
+  <p>
+    <span class="footer-left"><span class="unicode">&#x263A;</span> 2021 Maison Néet</span>
+
+    <span class="footer-right">
+        <a href="https://github.com/lilneet" rel="noreferrer noopener" target="_blank" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+        <a href="https://twitter.com/n33tyaki" rel="noreferrer noopener" target="_blank" title="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-twitter">
+  <use href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter" xlink:href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter"></use>
+</svg>
+
+        </a>
+        <a href="https://www.linkedin.com/in/amber-wanhui-han" rel="noreferrer noopener" target="_blank" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-linkedin">
+  <use href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin" xlink:href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin"></use>
+</svg>
+
+        </a>
+    </span>
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/zooming@2.1.1/build/zooming.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  // ScrollAppear
+  if (typeof $.fn.scrollAppear === 'function') {
+    $('.scrollappear').scrollAppear();
+  };
+
+  // Zooming
+  new Zooming(
+    {customSize: '100%', scaleBase: 0.9, scaleExtra: 0}
+  ).listen('.zooming');
+
+  // Share buttons
+  $('.article-share a').on('click', function() {
+    window.open($(this).attr('href'), 'Share', 'width=200,height=200,noopener');
+    return false;
+  });
+});
+
+;(function ($) {
+
+var els = [];
+
+var refreshVisibility = function() {
+  $.each(els, function() {
+    if ($(this)[0].getBoundingClientRect().top < $(window).height()) {
+      $(this).addClass('appeared');
+    }
+  });
+};
+
+$.fn.scrollAppear = function() {
+  this.each(function() {
+    els.push($(this));
+    $(this).addClass('appear');
+  });
+
+  refreshVisibility();
+
+  $(window).scroll(function() {
+    refreshVisibility();
+  });
+  return this;
+};
+}(jQuery));
+</script>
+</body>
+</html>
