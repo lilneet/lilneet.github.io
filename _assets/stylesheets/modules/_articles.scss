@@ -158,6 +158,10 @@
   padding-top: 25px;
   padding-bottom: 15px;
   margin-bottom: 15px;
+  h3 {
+    font-family: $serif;
+    font-size: $base-font-size * 1.4;
+  }
   p {
     display: block;
     margin: 12px 0 10px;
